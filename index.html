@@ -16,14 +16,6 @@
 
 </head>
 
-<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top - 400}, 1500);
-				});
-			});
-</script>
 
 <body>
 
@@ -205,6 +197,17 @@
 
 	<script type="text/javascript">
 		$('.parallax-window').parallax({imageSrc: "img/foto_nissan.jpg"});
+	</script>
+
+
+
+	<script type="text/javascript">
+
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top - 400}, 1500);
+			});
+			
 	</script>
 
 	<script type="text/javascript">
